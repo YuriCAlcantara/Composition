@@ -11,7 +11,7 @@ internal class Program
         Console.WriteLine("Enter worker data: ");
         Console.Write("Name: ");
         string name = Console.ReadLine();
-        Console.Write("Level (Junior/Midlevel/Senior");
+        Console.Write("Level (Junior/MidLevel/Senior): ");
         WorkerLevel level = Enum.Parse<WorkerLevel>(Console.ReadLine()); //A variavel level recebe os parametros da Workerlevel
         Console.Write("Base Salary: ");
         double baseSalary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -47,7 +47,7 @@ internal class Program
 
         Console.WriteLine("Name: " + worker.Name);
         Console.WriteLine("Department: " + worker.Department.Name);
-        Console.WriteLine("Income for " + monthAndYear + worker.Income(year, month));
+        Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture));
 
     }
 }
