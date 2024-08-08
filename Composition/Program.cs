@@ -9,6 +9,7 @@ internal class Program
         Console.Write("Enter department´s name: ");
         string deptName = Console.ReadLine();
         Console.WriteLine("Enter worker data: ");
+        Console.Write("Name: ");
         string name = Console.ReadLine();
         Console.Write("Level (Junior/Midlevel/Senior");
         WorkerLevel level = Enum.Parse<WorkerLevel>(Console.ReadLine()); //A variavel level recebe os parametros da Workerlevel
